@@ -5,12 +5,14 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "dev": "nodemon --ignore 'react-ui/' server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Teemu Simola",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
