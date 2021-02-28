@@ -10,6 +10,8 @@ const app = express();
 
 app.use(cors());
 
+app.use(express.static('build'))
+
 app.get('/api/products/:category', (req, res) => {
   const category = req.params.category;
 
