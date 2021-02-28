@@ -5,7 +5,7 @@ const redis = require('redis');
 
 const baseURL = 'https://bad-api-assignment.reaktor.com/v2/'
 
-const client = redis.createClient();
+const client = redis.createClient(process.env.REDIS_URL);
 const app = express();
 
 app.use(cors());
